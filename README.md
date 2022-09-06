@@ -24,7 +24,7 @@ Baragon is a system for automating load balancer configuration updates. It pairs
 Baragon is made up of two services:
 
 - BaragonService -- coordination service
-
+ 
 - BaragonAgentService -- applies changes on the actual load balancer
 
 When a web service changes (i.e. upstreams added / removed), POST a [BaragonRequest](Docs/api.md#requests) JSON object to BaragonService's `/[contextPath]/request` endpoint like this one:
